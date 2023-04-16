@@ -124,7 +124,7 @@ p{
   </h1>
 </div>
 <div>
-  <button class="sign-in">
+  <button onClick="signIn()" id="si" class="sign-in">
     Sign In
   </button>
 </div>
@@ -181,10 +181,16 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 function openPage1(){
- window.location.href ="http://127.0.0.1:5500/criket%20match.html" ;
+ window.location.href ="https://supersimplehtml.github.io/Cricket-/" ;
 }
 function openPage2(){
-   window.location.href ="http://127.0.0.1:5500/intro/into-to-html/styles/Index.html" ;
+   window.location.href ="https://supersimplehtml.github.io/Courtesy/" ;
+}
+      function signIn(){
+  var username= window.prompt('Enter Your Username','Username')
+  document.getElementById("si").remove()
+  
+
 }
 
       </script>
